@@ -1,3 +1,12 @@
+## [2.2.1](https://github.com/Supersalt/APT3/compare/v2.2.0...v2.2.1) (2022-05-19)
+
+
+### Bug Fixes
+
+* workflow ([545dfeb](https://github.com/Supersalt/APT3/commit/545dfeb1f4917b01c2d91df861b19e7bd87fe2b2))
+
+
+
 # [2.2.0](https://github.com/Supersalt/APT3/compare/v2.1.0...v2.2.0) (2022-05-19)
 
 
