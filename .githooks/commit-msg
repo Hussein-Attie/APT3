@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+
+if  head -1 "$1" | grep -qE "^(Merge branch) .{1,}$" ; then
+
+	echo "Merge detected so commit successful"
+	exit 0
+
+elif  ! head -1 "$1" | grep -qE "^(feat|fix|ci|chore|docs|test|style|refactor)(\(.+?\))?: .{1,}$" ; then
+	echo "Aborting commit. Your commit message is invalid. Please check the conventional commit rules at https://www.conventionalcommits.org/en/v1.0.0/ " >&2
+	exit 1
+	
+else 
+	echo "No error returned so commit successful"
+	exit 0
+fi
