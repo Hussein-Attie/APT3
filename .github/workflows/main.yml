@@ -78,7 +78,7 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          versioning: Tag
+          versioning: Semantic
           targetPlatform: ${{ matrix.targetPlatform }}
           buildName: TestGame-${{ matrix.targetPlatform }}
 
