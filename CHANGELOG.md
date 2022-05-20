@@ -1,3 +1,12 @@
+# [2.3.0](https://github.com/Supersalt/APT3/compare/v2.2.1...v2.3.0) (2022-05-20)
+
+
+### Features
+
+* remove test ([42291db](https://github.com/Supersalt/APT3/commit/42291db245d2d2d7a04de4e9fe9c631c5c9998f7))
+
+
+
 ## [2.2.1](https://github.com/Supersalt/APT3/compare/v2.2.0...v2.2.1) (2022-05-19)
 
 
