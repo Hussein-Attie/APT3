@@ -1,7 +1,9 @@
 name: Build project and Send to the Cloud
 
-on: [push, pull_request]
-
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   changelog:
