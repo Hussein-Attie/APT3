@@ -1,3 +1,12 @@
+# [3.2.0](https://github.com/Supersalt/APT3/compare/v3.1.0...v3.2.0) (2022-05-20)
+
+
+### Features
+
+* edit main.yml ([adb23d1](https://github.com/Supersalt/APT3/commit/adb23d138adc4f3c6d1014131735dc28de50aafd))
+
+
+
 # [3.1.0](https://github.com/Supersalt/APT3/compare/v3.0.0...v3.1.0) (2022-05-20)
 
 
@@ -36,15 +45,6 @@
 ### Features
 
 * remove test ([42291db](https://github.com/Supersalt/APT3/commit/42291db245d2d2d7a04de4e9fe9c631c5c9998f7))
-
-
-
-## [2.2.1](https://github.com/Supersalt/APT3/compare/v2.2.0...v2.2.1) (2022-05-19)
-
-
-### Bug Fixes
-
-* workflow ([545dfeb](https://github.com/Supersalt/APT3/commit/545dfeb1f4917b01c2d91df861b19e7bd87fe2b2))
 
 
 
