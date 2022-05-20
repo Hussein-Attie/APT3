@@ -48,12 +48,12 @@ jobs:
           lfs: true
           
      # Cache
- #     - uses: actions/cache@v2
-  #      with:
-   #       path: Library
+      - uses: actions/cache@v2
+        with:
+          path: Library
 
-    #      key: Library-${{ matrix.targetPlatform }}
-     #     restore-keys: Library-
+          key: Library-${{ matrix.targetPlatform }}
+          restore-keys: Library-
       # Test
      # - name: Run tests
       #  uses: game-ci/unity-test-runner@v2
@@ -75,17 +75,17 @@ jobs:
 
       #Build
       - uses: game-ci/unity-builder@v2
-        id: myBuildStep
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          versioning: Semantic
+          versioning: Tag
           targetPlatform: ${{ matrix.targetPlatform }}
           buildName: TestGame-${{ matrix.targetPlatform }}
+
        #Output 
       - uses: actions/upload-artifact@v2
         with:
-          name: Build-${{ matrix.targetPlatform }}-${{ steps.myBuildStep.outputs.buildVersion }}
+          name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
         
          #upload to google drive
