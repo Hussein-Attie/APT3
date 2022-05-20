@@ -48,12 +48,12 @@ jobs:
           lfs: true
           
      # Cache
-      - uses: actions/cache@v2
-        with:
-          path: Library
+ #     - uses: actions/cache@v2
+  #      with:
+   #       path: Library
 
-          key: Library-${{ matrix.targetPlatform }}
-          restore-keys: Library-
+    #      key: Library-${{ matrix.targetPlatform }}
+     #     restore-keys: Library-
       # Test
      # - name: Run tests
       #  uses: game-ci/unity-test-runner@v2
