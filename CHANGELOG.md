@@ -1,3 +1,12 @@
+# [3.1.0](https://github.com/Supersalt/APT3/compare/v3.0.0...v3.1.0) (2022-05-20)
+
+
+### Features
+
+* edit main.yml ([5bb0923](https://github.com/Supersalt/APT3/commit/5bb0923e7a010dceb182071258a9c5f657c482ab))
+
+
+
 # [3.0.0](https://github.com/Supersalt/APT3/compare/v2.4.0...v3.0.0) (2022-05-20)
 
 
@@ -36,15 +45,6 @@
 ### Bug Fixes
 
 * workflow ([545dfeb](https://github.com/Supersalt/APT3/commit/545dfeb1f4917b01c2d91df861b19e7bd87fe2b2))
-
-
-
-# [2.2.0](https://github.com/Supersalt/APT3/compare/v2.1.0...v2.2.0) (2022-05-19)
-
-
-### Features
-
-* test test ([2722450](https://github.com/Supersalt/APT3/commit/2722450276ddf66fadeaf405aded832bd61fc4a0))
 
 
 
