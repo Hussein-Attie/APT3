@@ -1,3 +1,12 @@
+# [2.4.0](https://github.com/Supersalt/APT3/compare/v2.3.0...v2.4.0) (2022-05-20)
+
+
+### Features
+
+* add test ([99de923](https://github.com/Supersalt/APT3/commit/99de923f892fe8e9f5c0a44fb26788e49219a4be))
+
+
+
 # [2.3.0](https://github.com/Supersalt/APT3/compare/v2.2.1...v2.3.0) (2022-05-20)
 
 
@@ -31,20 +40,6 @@
 ### Features
 
 * test test ([ce089ad](https://github.com/Supersalt/APT3/commit/ce089ad280492b582844b453f48c24feb9f37348))
-
-
-
-# [2.0.0](https://github.com/Supersalt/APT3/compare/6d2ee265130de4dd4285403554c6b242a1ff3114...v2.0.0) (2022-05-19)
-
-
-### Features
-
-* New update ([6d2ee26](https://github.com/Supersalt/APT3/commit/6d2ee265130de4dd4285403554c6b242a1ff3114))
-
-
-### BREAKING CHANGES
-
-* NEW UPDATE !!!
 
 
 
