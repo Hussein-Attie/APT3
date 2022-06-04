@@ -94,7 +94,7 @@ jobs:
         with:
            target:  build/${{ matrix.targetPlatform }}
            name: Build-${{ matrix.targetPlatform }}v-${{ steps.myBuildStep.outputs.buildVersion }}
-           credentials: ${{ secrets.DRIVE_CREDENTIALS }}
+           credentials: ${{ secrets.CREDENTIALS }}
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
    
 
