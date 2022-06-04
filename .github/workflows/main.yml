@@ -41,6 +41,7 @@ jobs:
           - StandaloneWindows # Build a Windows standalone.
      
     steps:
+    
     #Checkout
       - uses: actions/checkout@v2
         with:
@@ -48,12 +49,12 @@ jobs:
           lfs: true
           
      # Cache
-      - uses: actions/cache@v2
-        with:
-          path: Library
+    #  - uses: actions/cache@v2
+     #   with:
+      #    path: Library
 
-          key: Library-${{ matrix.targetPlatform }}
-          restore-keys: Library-
+       #   key: Library-${{ matrix.targetPlatform }}
+        #  restore-keys: Library-
       # Test
      # - name: Run tests
       #  uses: game-ci/unity-test-runner@v2
@@ -94,7 +95,7 @@ jobs:
         with:
            target:  build/${{ matrix.targetPlatform }}
            name: Build-${{ matrix.targetPlatform }}v-${{ steps.myBuildStep.outputs.buildVersion }}
-           credentials: ${{ secrets.DRIVE_CREDENTIALS }}
+           credentials: ${{ secrets.CREDENTIALS }}
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
    
 
