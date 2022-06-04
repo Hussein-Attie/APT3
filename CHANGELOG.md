@@ -1,3 +1,12 @@
+# [4.1.0](https://github.com/Hussein-Attie/APT3/compare/v4.0.0...v4.1.0) (2022-06-04)
+
+
+### Features
+
+* new feat ([7b1552d](https://github.com/Hussein-Attie/APT3/commit/7b1552d5366f27d3607ba9219265e36cfa83f511))
+
+
+
 # [4.0.0](https://github.com/Hussein-Attie/APT3/compare/v3.2.0...v4.0.0) (2022-06-04)
 
 
@@ -41,15 +50,6 @@
 ### BREAKING CHANGES
 
 * disable cachE
-
-
-
-# [2.4.0](https://github.com/Hussein-Attie/APT3/compare/v2.3.0...v2.4.0) (2022-05-20)
-
-
-### Features
-
-* add test ([99de923](https://github.com/Hussein-Attie/APT3/commit/99de923f892fe8e9f5c0a44fb26788e49219a4be))
 
 
 
