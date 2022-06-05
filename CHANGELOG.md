@@ -1,3 +1,12 @@
+## [4.4.2](https://github.com/Hussein-Attie/APT3/compare/v4.4.1...v4.4.2) (2022-06-05)
+
+
+### Bug Fixes
+
+* remove feat ([bf7d5c0](https://github.com/Hussein-Attie/APT3/commit/bf7d5c0c22ffafb474515c0da44784da677d3759))
+
+
+
 ## [4.4.1](https://github.com/Hussein-Attie/APT3/compare/v4.4.0...v4.4.1) (2022-06-05)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * new feat ([649b246](https://github.com/Hussein-Attie/APT3/commit/649b246172fd9fec2c285cd116f8f4202394bb66))
-
-
-
-# [4.1.0](https://github.com/Hussein-Attie/APT3/compare/v4.0.0...v4.1.0) (2022-06-04)
-
-
-### Features
-
-* new feat ([7b1552d](https://github.com/Hussein-Attie/APT3/commit/7b1552d5366f27d3607ba9219265e36cfa83f511))
 
 
 
