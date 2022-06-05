@@ -1,3 +1,12 @@
+# [4.4.0](https://github.com/Hussein-Attie/APT3/compare/v4.3.0...v4.4.0) (2022-06-05)
+
+
+### Features
+
+* new new new feat ([d718840](https://github.com/Hussein-Attie/APT3/commit/d7188402c8abaf0179f2dace7e2a3d48abc679dd))
+
+
+
 # [4.3.0](https://github.com/Hussein-Attie/APT3/compare/v4.2.0...v4.3.0) (2022-06-04)
 
 
@@ -36,15 +45,6 @@
 ### BREAKING CHANGES
 
 * NEW UPDATE 4TH
-
-
-
-# [3.2.0](https://github.com/Hussein-Attie/APT3/compare/v3.1.0...v3.2.0) (2022-05-20)
-
-
-### Features
-
-* edit main.yml ([adb23d1](https://github.com/Hussein-Attie/APT3/commit/adb23d138adc4f3c6d1014131735dc28de50aafd))
 
 
 
