@@ -1,9 +1,7 @@
 name: Build project and Send to the Cloud
 
 on:
-  push:
-    branches:
-      - master
+    push
 
 jobs:
 
