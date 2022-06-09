@@ -21,6 +21,7 @@ jobs:
           
 
       - name: create release
+        id: create_release
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
@@ -78,7 +79,8 @@ jobs:
           
 
       #Build
-      - uses: game-ci/unity-builder@v1.5
+      - uses: game-ci/unity-builder@v2
+        id: build
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
@@ -100,6 +102,16 @@ jobs:
            name: Build-${{ matrix.targetPlatform }}v-${{ steps.myBuildStep.outputs.buildVersion }}
            credentials: ${{ secrets.CREDENTIALS }}
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
-  
-
+           
+    #clean up if any step fails 
+      - name: Rollback Release
+        if: failure()
+        uses: author/action-rollback@stable
+        with:
+            # Using a known release ID
+            id: ${{ steps.create_release.id }}
+            tag: ${{ steps.changelog.outputs.tag }}
+            delete_orphan_tag: true
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
