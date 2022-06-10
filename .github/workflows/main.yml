@@ -30,6 +30,8 @@ jobs:
           tag_name: ${{ steps.changelog.outputs.tag }}
           release_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
+      - name: ECHO TAG
+        run: echo ${{ steps.changelog.outputs.tag }}
           
   Build:
     name: Build for ${{ matrix.targetPlatform }}
@@ -44,6 +46,8 @@ jobs:
      
     steps:
     
+      - name: ECHO TAG
+        run: echo ${{ steps.changelog.outputs.tag }}
     #Checkout
       - uses: actions/checkout@v2
         with:
@@ -77,23 +81,27 @@ jobs:
           name: Test results
           path: artifacts
           
-
+      - name: ECHO TAG
+        run: echo ${{ steps.changelog.outputs.tag }}
       #Build
       - uses: game-ci/unity-builder@v2 
         id: build
         env:
-          UNITY_LICENSE: ${{ secrets.LICENSE }} #should be  secrets.UNITY_LICENSE 
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }} #should be  secrets.UNITY_LICENSE 
         with:
           versioning: Tag
           targetPlatform: ${{ matrix.targetPlatform }}
           buildName: TestGame-${{ matrix.targetPlatform }}
-
+      - name: ECHO TAG
+        run: echo ${{ steps.changelog.outputs.tag }}
        #Output 
       - uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
         
+      - name: ECHO TAG
+        run: echo ${{ steps.changelog.outputs.tag }}
          #upload to google drive
       - name: Upload build to Google Drive
         uses: Jodebu/upload-to-drive@master
@@ -104,7 +112,8 @@ jobs:
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
            
  
- 
+      - name: ECHO TAG
+        run: echo ${{ steps.changelog.outputs.tag }}
    #clean up if any step fails 
       - name: Rollback Release
         if: failure()
