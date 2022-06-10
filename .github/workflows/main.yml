@@ -113,6 +113,5 @@ jobs:
             # Using a known release ID
             #id: ${{ steps.create_release.id }}
             tag: v${{ steps.changelog.outputs.tag }}
-            delete_orphan_tag: true
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
