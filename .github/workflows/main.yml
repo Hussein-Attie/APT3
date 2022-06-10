@@ -20,7 +20,7 @@ jobs:
           github-token: ${{ secrets.github_token }}
           
 
-      - name: create release
+      - name: create_release
         id: create_release
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
@@ -34,7 +34,7 @@ jobs:
   Build:
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
-    needs: changelog
+   # needs: changelog
     strategy:
       fail-fast: false
       matrix:
