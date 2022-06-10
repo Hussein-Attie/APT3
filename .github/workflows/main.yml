@@ -79,10 +79,10 @@ jobs:
           
 
       #Build
-      - uses: game-ci/unity-builder@v1.6 #SHOULD BE 2 PUT 1.6 FOR TESTING
+      - uses: game-ci/unity-builder@v2 
         id: build
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_LICENSE: ${{ secrets.LICENSE }} #should be  secrets.UNITY_LICENSE 
         with:
           versioning: Tag
           targetPlatform: ${{ matrix.targetPlatform }}
