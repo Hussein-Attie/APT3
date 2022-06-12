@@ -39,6 +39,8 @@ jobs:
     name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
     needs: changelog
+    outputs:
+      output2: ${{ steps.changelog.outputs.tag }}
     strategy:
       fail-fast: false
       matrix:
@@ -111,14 +113,14 @@ jobs:
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
  
       - name: get result
-        run: echo ${{ needs.myBuildStep.result }}
+        run: echo ${{ steps.myBuildStep.outputs.status }}
    
             
   clean-up:
   
     name: Clean Up if Fails
     runs-on: ubuntu-latest
-    if: always() && (needs.myBuildStep.result == 'failure' )
+    if: always() && (needs.myBuildStep.status == 'failure' )  #steps.hello.outputs.status
     needs: Build
     steps:
     
