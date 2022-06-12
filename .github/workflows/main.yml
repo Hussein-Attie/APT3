@@ -111,7 +111,16 @@ jobs:
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
  
     
-   #clean up if any step fails 
+   
+            
+  clean-up:
+  
+    name: Clean Up if Fails
+    runs-on: ubuntu-latest
+    needs: Build
+    steps:
+    
+     #clean up if any step fails 
       - name: Rollback Release
         if: failure()
         uses: author/action-rollback@stable
@@ -121,4 +130,3 @@ jobs:
             tag: ${{ needs.changelog.outputs.output1 }}
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            
