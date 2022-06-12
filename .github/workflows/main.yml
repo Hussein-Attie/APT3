@@ -143,8 +143,8 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      
-      - name: Undo Push
-        uses: exions/undo-push@v1
-        with:
-          branch: ${{ github.event.inputs.branch }}
+     # - name: Undo Push
+      #  uses: exions/undo-push@v1
+       # with:
+        #  branch: ${{ github.event.inputs.branch }}
             
