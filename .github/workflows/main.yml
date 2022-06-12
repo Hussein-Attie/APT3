@@ -87,7 +87,7 @@ jobs:
       - uses: game-ci/unity-builder@v2 
         id: myBuildStep
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }} #should be  secrets.UNITY_LICENSE 
+          UNITY_LICENSE: ${{ secrets.LICENSE }} #should be  secrets.UNITY_LICENSE 
         with:
           versioning: Custom
           version: ${{ needs.changelog.outputs.output1 }}
@@ -109,9 +109,6 @@ jobs:
            name: Build-${{ matrix.targetPlatform }}v-${{ steps.myBuildStep.outputs.buildVersion }}
            credentials: ${{ secrets.CREDENTIALS }}
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
-           
-      - name: Echo version
-        run: echo v-${{ steps.myBuildStep.outputs.buildVersion }}
  
     
    #clean up if any step fails 
