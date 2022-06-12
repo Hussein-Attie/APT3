@@ -1,3 +1,12 @@
+# [4.22.0](https://github.com/Hussein-Attie/APT3/compare/v4.21.0...v4.22.0) (2022-06-12)
+
+
+### Features
+
+* 4.22.0 ([3fb60c7](https://github.com/Hussein-Attie/APT3/commit/3fb60c7597448d959f39f9058fa1029d668fa96a))
+
+
+
 # [4.21.0](https://github.com/Hussein-Attie/APT3/compare/v4.20.0...v4.21.0) (2022-06-12)
 
 
@@ -33,15 +42,6 @@
 ### Features
 
 * 14.16 ([7a1bf74](https://github.com/Hussein-Attie/APT3/commit/7a1bf7498a3415bc0ecfb07bc159bdfb81d22d70))
-
-
-
-# [4.15.0](https://github.com/Hussein-Attie/APT3/compare/v4.14.0...v4.15.0) (2022-06-12)
-
-
-### Features
-
-* 4.15.0 ([e67d967](https://github.com/Hussein-Attie/APT3/commit/e67d967a664a0979704b472aa67cad056aa0fbfc))
 
 
 
