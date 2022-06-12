@@ -123,8 +123,16 @@ jobs:
     needs: [Build, changelog]
     if: always() && (needs.Build.outputs.output1 != 'success' )  #steps.hello.outputs.status
     steps:
+    
       - name: get tag
         run: echo ${{ needs.changelog.outputs.output1 }}
+        
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+           ref: ${{ github.event.inputs.branch }}
+           fetch-depth: 0 
+        
      #clean up if any step fails 
       - name: Rollback Release
         uses: author/action-rollback@stable
@@ -134,4 +142,9 @@ jobs:
             tag: ${{ needs.changelog.outputs.output1 }}
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     
+      - name: Undo Push
+        uses: exions/undo-push@v1
+        with:
+          branch: ${{ github.event.inputs.branch }}
             
