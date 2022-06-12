@@ -120,7 +120,7 @@ jobs:
   
     name: Clean Up if Fails
     runs-on: ubuntu-latest
-    if: always() && (needs.myBuildStep.status == 'failure' )  #steps.hello.outputs.status
+    if: always() && (steps.myBuildStep.outcome != 'success' )  #steps.hello.outputs.status
     needs: Build
     steps:
     
