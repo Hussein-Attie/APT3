@@ -7,6 +7,9 @@ jobs:
   changelog:
     name: Generate Changelog
     runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.changelog.outputs.tag }}
+      
     steps:
     
       - uses: actions/checkout@v3
@@ -47,7 +50,7 @@ jobs:
     steps:
     
       - name: ECHO TAG
-        run: echo ${{ steps.changelog.outputs.tag }}
+        run: echo ${{ needs.changelog.outputs.output1 }}
     #Checkout
       - uses: actions/checkout@v2
         with:
@@ -82,7 +85,7 @@ jobs:
           path: artifacts
           
       - name: ECHO TAG
-        run: echo ${{ steps.changelog.outputs.tag }}
+        run: echo ${{ needs.changelog.outputs.output1 }}
       #Build
       - uses: game-ci/unity-builder@v2 
         id: build
@@ -93,7 +96,7 @@ jobs:
           targetPlatform: ${{ matrix.targetPlatform }}
           buildName: TestGame-${{ matrix.targetPlatform }}
       - name: ECHO TAG
-        run: echo ${{ steps.changelog.outputs.tag }}
+        run: echo ${{ needs.changelog.outputs.output1 }}
        #Output 
       - uses: actions/upload-artifact@v2
         with:
@@ -101,7 +104,7 @@ jobs:
           path: build/${{ matrix.targetPlatform }}
         
       - name: ECHO TAG
-        run: echo ${{ steps.changelog.outputs.tag }}
+        run: echo ${{ needs.changelog.outputs.output1 }}
          #upload to google drive
       - name: Upload build to Google Drive
         uses: Jodebu/upload-to-drive@master
@@ -113,7 +116,7 @@ jobs:
            
  
       - name: ECHO TAG
-        run: echo ${{ steps.changelog.outputs.tag }}
+        run: echo ${{ needs.changelog.outputs.output1 }}
    #clean up if any step fails 
       - name: Rollback Release
         if: failure()
@@ -121,6 +124,6 @@ jobs:
         with:
             # Using a known release ID
             #id: ${{ steps.create_release.id }}
-            tag: v${{ steps.changelog.outputs.tag }}
+            tag: v${{ needs.changelog.outputs.output1 }}
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
