@@ -113,7 +113,7 @@ jobs:
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
  
       - name: get result
-        run: echo ${{ steps.myBuildStep.outputs.status }}
+        run: echo ${{ steps.myBuildStep.outcome }}
    
             
   clean-up:
