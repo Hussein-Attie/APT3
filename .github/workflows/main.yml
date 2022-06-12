@@ -120,7 +120,7 @@ jobs:
   
     name: Clean Up if Fails
     runs-on: ubuntu-latest
-    needs: Build
+    needs: [Build, changelog]
     if: always() && (needs.Build.outputs.output1 != 'success' )  #steps.hello.outputs.status
     steps:
       - name: get tag
