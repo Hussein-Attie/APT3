@@ -67,15 +67,15 @@ jobs:
           restore-keys: Library-
           
       # Test
-      - name: Run tests
-        uses: game-ci/unity-test-runner@v2
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
-          restore-keys: |
-            Library-
+      #- name: Run tests
+       # uses: game-ci/unity-test-runner@v2
+        #env:
+         # UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        #with:
+         # githubToken: ${{ secrets.GITHUB_TOKEN }}
+         # key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          #restore-keys: |
+           # Library-
             
       # Upload Test Results       
       - uses: actions/upload-artifact@v2
@@ -123,7 +123,8 @@ jobs:
     needs: Build
     if: always() && (needs.Build.outputs.output1 != 'success' )  #steps.hello.outputs.status
     steps:
-    
+      - name: get tag
+        run: echo ${{ needs.changelog.outputs.output1 }}
      #clean up if any step fails 
       - name: Rollback Release
         uses: author/action-rollback@stable
