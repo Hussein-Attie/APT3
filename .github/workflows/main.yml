@@ -120,12 +120,12 @@ jobs:
   
     name: Clean Up if Fails
     runs-on: ubuntu-latest
-    if: always() && (steps.myBuildStep.outcome != 'success' )  #steps.hello.outputs.status
     needs: Build
     steps:
     
      #clean up if any step fails 
       - name: Rollback Release
+        if: always() && (steps.myBuildStep.outcome != 'success' )  #steps.hello.outputs.status
         uses: author/action-rollback@stable
         with:
             # Using a known release ID
