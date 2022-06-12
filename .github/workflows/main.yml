@@ -111,7 +111,7 @@ jobs:
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
  
       - name: get result
-        run: echo needs.myBuildStep.result
+        run: echo ${{ needs.myBuildStep.result }}
    
             
   clean-up:
