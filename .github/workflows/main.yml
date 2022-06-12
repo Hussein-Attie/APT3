@@ -89,7 +89,8 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }} #should be  secrets.UNITY_LICENSE 
         with:
-          versioning: ${{ needs.changelog.outputs.output1 }}
+          versioning: Custom
+          version: ${{ needs.changelog.outputs.output1 }}
           targetPlatform: ${{ matrix.targetPlatform }}
           buildName: TestGame-${{ matrix.targetPlatform }}-v${{ steps.myBuildStep.outputs.buildVersion }}
      
