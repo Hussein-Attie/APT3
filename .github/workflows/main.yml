@@ -122,7 +122,7 @@ jobs:
     
      #clean up if any step fails 
       - name: Rollback Release
-        if: failure()
+        if: always() && (needs.myBuildStep.result == 'failure' )
         uses: author/action-rollback@stable
         with:
             # Using a known release ID
