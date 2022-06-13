@@ -175,17 +175,17 @@ jobs:
       #  with:
        #  github_token: ${{ github.token }}
         # tags: true
-      - name: Modify name of the package.json
+      - name: Undo Bump 
         uses: maxgfr/github-change-json@main
         with:
           key: 'version'
-          value: '1.0.0'
-          path: demo.json
+          value: ${{ needs.changelog.outputs.output2 }}
+          path:  package.json
           commit: true # it will commit the change
           
-      - name: Modify name of the package.json locally
+      - name: Undo Bump locally
         uses: maxgfr/github-change-json@main
         with:
           key: 'version'
-          value: '1.0.0'
+          value: ${{ needs.changelog.outputs.output2 }}
           path: package.json
