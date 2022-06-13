@@ -89,7 +89,7 @@ jobs:
       - uses: game-ci/unity-builder@v2 
         id: myBuildStep
         env:
-          UNITY_LICENSE: ${{ secrets.LICENSE }} #should be  secrets.UNITY_LICENSE 
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }} #should be  secrets.UNITY_LICENSE 
         with:
           versioning: Custom
           version: ${{ needs.changelog.outputs.output1 }}
@@ -142,3 +142,19 @@ jobs:
             tag: ${{ needs.changelog.outputs.output1 }}
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            
+      - name: Get tag
+        id: tag
+        uses: dawidd6/action-get-tag@v1
+        with:
+            # Optionally strip `v` prefix
+            strip_v: true
+      - name: Use tag
+        run: echo ${{steps.tag.outputs.tag}}
+            
+      - name: Update package.json version
+        uses: jossef/action-set-json-field@v1
+        with:
+            file: package.json
+            field: version
+            value: ${{ steps.tag.outputs.tag }}
