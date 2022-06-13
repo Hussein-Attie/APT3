@@ -150,7 +150,7 @@ jobs:
           key: 'version'
           value: ${{ needs.changelog.outputs.output2 }}
           path: package.json
-          commit: true # it will commit the change
+          commit: false # it will commit the change
           
       - name: Undo Bump locally
         uses: maxgfr/github-change-json@main
