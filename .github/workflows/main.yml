@@ -155,23 +155,37 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
     
-      - name: Update package.json version
-        uses: jossef/action-set-json-field@v1
-        with:
-            file: demo.json
-            field: version
-            value: '1.0.0'
+   #   - name: Update package.json version
+    #    uses: jossef/action-set-json-field@v1
+     #   with:
+      #      file: demo.json
+       #     field: version
+        #    value: '1.0.0'
 
-      - name: Commit files
-        run: |
-         git config --local user.email "action@github.com"
-         git config --local user.name "GitHub Action"
-         git add *
-         git commit -m "chore: debump json"
+     # - name: Commit files
+      #  run: |
+       #  git config --local user.email "action@github.com"
+        # git config --local user.name "GitHub Action"
+         #git add *
+         #git commit -m "chore: debump json"
         
     
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
+    #  - name: Push changes
+     #   uses: ad-m/github-push-action@v0.6.0
+      #  with:
+       #  github_token: ${{ github.token }}
+        # tags: true
+      - name: Modify name of the package.json
+        uses: maxgfr/github-change-json@main
         with:
-         github_token: ${{ github.token }}
-         tags: true
+          key: 'version'
+          value: '1.0.0'
+          path: demo.json
+          commit: true # it will commit the change
+          
+      - name: Modify name of the package.json locally
+        uses: maxgfr/github-change-json@main
+        with:
+          key: 'version'
+          value: '1.0.0'
+          path: package.json
