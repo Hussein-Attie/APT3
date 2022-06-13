@@ -12,6 +12,12 @@ jobs:
       
     steps:
             
+     
+            
+      - uses: actions/checkout@v3
+        with:
+         fetch-depth: 0
+         
       - name: get version
         id: version
         uses: notiz-dev/github-action-json-property@release
@@ -20,11 +26,6 @@ jobs:
           prop_path: 'version'
         
       - run: echo ${{steps.version.outputs.prop}} 
-            
-      - uses: actions/checkout@v3
-        with:
-         fetch-depth: 0
-
       - name: conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3.7.1
