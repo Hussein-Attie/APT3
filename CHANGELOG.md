@@ -1,8 +1,9 @@
-# [5.1.0](https://github.com/Hussein-Attie/APT3/compare/v5.0.0...v5.1.0) (2022-06-13)
+# [5.2.0](https://github.com/Hussein-Attie/APT3/compare/v5.0.0...v5.2.0) (2022-06-13)
 
 
 ### Features
 
+* 5.1.0 ([d1de2d2](https://github.com/Hussein-Attie/APT3/commit/d1de2d2918a96aa8989a1f0a644a8b7c2e97a0a4))
 * fail ([a32bfd5](https://github.com/Hussein-Attie/APT3/commit/a32bfd53026cc618ab7b07dcdecf78e462afdb29))
 
 
