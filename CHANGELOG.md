@@ -1,4 +1,4 @@
-# [4.28.0](https://github.com/Hussein-Attie/APT3/compare/v4.24.0...v4.28.0) (2022-06-12)
+# [4.29.0](https://github.com/Hussein-Attie/APT3/compare/v4.24.0...v4.29.0) (2022-06-13)
 
 
 ### Features
