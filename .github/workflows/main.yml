@@ -32,7 +32,7 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3.7.1
         with:
           github-token: ${{ secrets.github_token }}
-          release-count: '0'
+          skip-commit: 'true' #this is for testing 
 
       - name: create_release
         id: create_release
