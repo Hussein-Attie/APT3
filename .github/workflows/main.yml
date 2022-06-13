@@ -179,13 +179,13 @@ jobs:
         uses: maxgfr/github-change-json@main
         with:
           key: 'version'
-          value: ${{ needs.changelog.outputs.output2 }}
-          path:  package.json
+          value: 0.0.0
+          path:  demo.json
           commit: true # it will commit the change
           
       - name: Undo Bump locally
         uses: maxgfr/github-change-json@main
         with:
           key: 'version'
-          value: ${{ needs.changelog.outputs.output2 }}
+          value: '0.0.0'
           path: package.json
