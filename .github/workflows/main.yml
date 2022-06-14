@@ -28,28 +28,24 @@ jobs:
        # with: 
         #  path: 'package.json'
          # prop_path: 'version'
-        
-    #Changelog
-      - name: Conventional changelog action
-        id: generate_changelog
-        uses: TriPSs/conventional-changelog-action@v3.7.1
+            
+      - name: Conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v3
         with:
-          github-token: ${{ secrets.github_token }}
-          skip-commit: 'false'
-          
-    #Github Release
-      - name: Create release
-        id: create_release
+            github-token: ${{ secrets.github_token }}
+            output-file: "false"
+
+      - name: Create Release
         uses: actions/create-release@v1
-        if: ${{ steps.generate_changelog.outputs.skipped == 'false' }}
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+            GITHUB_TOKEN: ${{ secrets.github_token }}
         with:
-          tag_name: ${{ steps.generate_changelog.outputs.tag }}
-          release_name: ${{ steps.generate_changelog.outputs.tag }}
-          body: ${{ steps.generate_changelog.outputs.clean_changelog }}
-     
-          
+         tag_name: ${{ steps.changelog.outputs.tag }}
+         release_name: ${{ steps.changelog.outputs.tag }}
+         body: ${{ steps.changelog.outputs.clean_changelog }}
+    
   Build:
 
     name: Build for ${{ matrix.targetPlatform }}
