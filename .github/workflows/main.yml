@@ -144,20 +144,20 @@ jobs:
            ref: ${{ github.event.inputs.branch }}
            fetch-depth: 0 
         
-      - name: Undo Bump 
-        uses: maxgfr/github-change-json@main
-        with:
-          key: 'version'
-          value: ${{ needs.changelog.outputs.output2 }}
-          path: package.json
-          commit: false # it will commit the change
+      #- name: Undo Bump 
+       # uses: maxgfr/github-change-json@main
+       # with:
+        #  key: 'version'
+        #  value: ${{ needs.changelog.outputs.output2 }}
+         # path: package.json
+          #commit: false # it will commit the change
           
-      - name: Undo Bump locally
-        uses: maxgfr/github-change-json@main
-        with:
-          key: 'version'
-          value: ${{ needs.changelog.outputs.output2 }}
-          path: package.json
+      #- name: Undo Bump locally
+       # uses: maxgfr/github-change-json@main
+        #with:
+         # key: 'version'
+          #value: ${{ needs.changelog.outputs.output2 }}
+          #path: package.json
         
      #clean up if any step fails 
       - name: Rollback Release
