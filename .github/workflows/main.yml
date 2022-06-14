@@ -47,7 +47,7 @@ jobs:
         with:
           tag_name: ${{ steps.generate_changelog.outputs.tag }}
           release_name: ${{ steps.generate_changelog.outputs.tag }}
-          body: ${{ steps.cgenerate_changelog.outputs.clean_changelog }}
+          body: ${{ steps.generate_changelog.outputs.clean_changelog }}
      
           
   Build:
@@ -204,3 +204,4 @@ jobs:
        #  github_token: ${{ github.token }}
         # tags: true
      
+
