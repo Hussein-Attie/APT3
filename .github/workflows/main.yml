@@ -35,7 +35,7 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3.7.1
         with:
           github-token: ${{ secrets.github_token }}
-          skip-on-empty: 'false'
+          skip-on-empty: 'true'
           
     #Github Release
       - name: Create release
