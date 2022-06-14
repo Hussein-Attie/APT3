@@ -1,3 +1,27 @@
+# [8.0.0](https://github.com/Hussein-Attie/APT3/compare/v5.12.3...v8.0.0) (2022-06-14)
+
+
+### Bug Fixes
+
+* 7.0.1 ([89d2dcb](https://github.com/Hussein-Attie/APT3/commit/89d2dcb69027564253954bb5a4889adfcdb74305))
+* fix ([2dc974e](https://github.com/Hussein-Attie/APT3/commit/2dc974e217aea415e3f72019a63903f7b1fea752))
+* fix generate_changelog ([0c399a8](https://github.com/Hussein-Attie/APT3/commit/0c399a810dd132e1afbf4a4a1ad0939206013a16))
+* skip on empty true ([c53010b](https://github.com/Hussein-Attie/APT3/commit/c53010bc8150bd7baa8a040174248fc0a20940a1))
+
+
+### Features
+
+* new feat ([f1300ef](https://github.com/Hussein-Attie/APT3/commit/f1300efcfa9b75c433331cfb60803bf00ae50548))
+* new feat 2 ([2d14a42](https://github.com/Hussein-Attie/APT3/commit/2d14a42f9e9a5817c7ae0673a317e252a9a876a7))
+* skipcommit false ([e0aef7f](https://github.com/Hussein-Attie/APT3/commit/e0aef7f1861cbad1c1a3aacffdb08f172f99695d))
+
+
+### BREAKING CHANGES
+
+* 7.0 RELEASE
+
+
+
 ## [5.12.3](https://github.com/Hussein-Attie/APT3/compare/v5.12.2...v5.12.3) (2022-06-14)
 
 
@@ -38,15 +62,6 @@
 
 * NEW UPDATE
 * new update
-
-
-
-# [5.13.0](https://github.com/Hussein-Attie/APT3/compare/v5.12.0...v5.13.0) (2022-06-13)
-
-
-### Features
-
-* 5.13 -> 5.12 ([329f839](https://github.com/Hussein-Attie/APT3/commit/329f839d3f0a7240db7f1c1bc67eb63fd2f51ea0))
 
 
 
