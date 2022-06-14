@@ -77,16 +77,16 @@ jobs:
           key: Library-${{ matrix.targetPlatform }}
           restore-keys: Library-
           
-      # Test
-      #- name: Run tests
-       # uses: game-ci/unity-test-runner@v2
-        #env:
-         # UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        #with:
-         # githubToken: ${{ secrets.GITHUB_TOKEN }}
-         # key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
-          #restore-keys: |
-           # Library-
+    # Test
+      - name: Run tests
+        uses: game-ci/unity-test-runner@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Library-
             
       # Upload Test Results       
       - uses: actions/upload-artifact@v2
@@ -100,7 +100,7 @@ jobs:
       - uses: game-ci/unity-builder@v2 
         id: myBuildStep
         env:
-          UNITY_LICENSE: ${{ secrets.LICENSE }} #should be  secrets.UNITY_LICENSE 
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }} #should be  secrets.UNITY_LICENSE 
         with:
           versioning: Custom
           version: ${{ needs.changelog.outputs.output1 }}
