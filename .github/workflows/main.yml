@@ -40,13 +40,13 @@ jobs:
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
-        if: ${{ steps.changelog-generator.outputs.skipped == 'false' }}
+        if: ${{ steps.generate_changelog.outputs.skipped == 'false' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
         with:
-          tag_name: ${{ steps.changelog-generator.outputs.tag }}
-          release_name: ${{ steps.changelog-generator.outputs.tag }}
-          body: ${{ steps.changelog-generator.outputs.clean_changelog }}
+          tag_name: ${{ steps.generate_changelog.outputs.tag }}
+          release_name: ${{ steps.generate_changelog.outputs.tag }}
+          body: ${{ steps.cgenerate_changelog.outputs.clean_changelog }}
      
           
   Build:
