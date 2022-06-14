@@ -1,3 +1,12 @@
+## [5.12.2](https://github.com/Hussein-Attie/APT3/compare/v5.12.1...v5.12.2) (2022-06-14)
+
+
+### Bug Fixes
+
+* Edit main.yml ([8b0e17a](https://github.com/Hussein-Attie/APT3/commit/8b0e17acb31da9d9bb41e6a8bc812c071100fdae))
+
+
+
 ## [5.12.1](https://github.com/Hussein-Attie/APT3/compare/v6.0.0...v5.12.1) (2022-06-14)
 
 
@@ -38,15 +47,6 @@
 ### Features
 
 * test ([33a6d72](https://github.com/Hussein-Attie/APT3/commit/33a6d723cf410de49aa135598776221ebb7bb683))
-
-
-
-# [5.11.0](https://github.com/Hussein-Attie/APT3/compare/v5.10.0...v5.11.0) (2022-06-13)
-
-
-### Features
-
-* 5.11 -> 5.10 ([2587279](https://github.com/Hussein-Attie/APT3/commit/2587279fa43c71011890657d1f968cb00749534c))
 
 
 
