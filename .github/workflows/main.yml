@@ -118,7 +118,7 @@ jobs:
      
     #Build Output
       - name: Output build artifacts
-      - uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}-${{ steps.build.outputs.buildVersion }}
           path: build/${{ matrix.targetPlatform }}
