@@ -156,14 +156,14 @@ jobs:
     
         
   #  #Rollback
-  #   - name: Rollback Release
-  #     uses: author/action-rollback@stable
-  #     with:
-  #         # Using a known release ID
-  #         #id: ${{ steps.create_release.id }}
-  #         tag: ${{ needs.Changelog.outputs.output1 }}
-  #      env:
-  #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Rollback Release
+        uses: author/action-rollback@stable
+        with:
+           # Using a known release ID
+           #id: ${{ steps.create_release.id }}
+            tag: ${{ needs.Changelog.outputs.output1 }}
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
 
 
