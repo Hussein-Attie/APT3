@@ -1,3 +1,7 @@
+## [8.0.1](https://github.com/Hussein-Attie/APT3/compare/v8.0.0...v8.0.1) (2022-06-14)
+
+
+
 # [8.0.0](https://github.com/Hussein-Attie/APT3/compare/v5.12.3...v8.0.0) (2022-06-14)
 
 
@@ -46,22 +50,6 @@
 ### Bug Fixes
 
 * remove skip commit ([724c281](https://github.com/Hussein-Attie/APT3/commit/724c28195a284f70f85fd92025f2988110662558))
-
-
-
-# [6.0.0](https://github.com/Hussein-Attie/APT3/compare/v5.13.0...v6.0.0) (2022-06-14)
-
-
-### Features
-
-* new update ([cee7c35](https://github.com/Hussein-Attie/APT3/commit/cee7c35209b12befc31c70a8cf4d390ae5ab21fe))
-* new update  ([92670d8](https://github.com/Hussein-Attie/APT3/commit/92670d83efe1f35a716f30e3b42b232281513f97))
-
-
-### BREAKING CHANGES
-
-* NEW UPDATE
-* new update
 
 
 
