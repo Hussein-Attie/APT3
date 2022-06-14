@@ -1,3 +1,12 @@
+# [8.2.0](https://github.com/Hussein-Attie/APT3/compare/v8.1.0...v8.2.0) (2022-06-14)
+
+
+### Features
+
+* rollback uncommented ([0121201](https://github.com/Hussein-Attie/APT3/commit/01212018df3afd3898d16ebae7659a947fcd8098))
+
+
+
 # [8.1.0](https://github.com/Hussein-Attie/APT3/compare/v8.0.1...v8.1.0) (2022-06-14)
 
 
@@ -41,15 +50,6 @@
 ### Bug Fixes
 
 * Edit main.yml ([c02eb76](https://github.com/Hussein-Attie/APT3/commit/c02eb76e81acece0253a3294f24cec179d337d4e))
-
-
-
-## [5.12.2](https://github.com/Hussein-Attie/APT3/compare/v5.12.1...v5.12.2) (2022-06-14)
-
-
-### Bug Fixes
-
-* Edit main.yml ([8b0e17a](https://github.com/Hussein-Attie/APT3/commit/8b0e17acb31da9d9bb41e6a8bc812c071100fdae))
 
 
 
