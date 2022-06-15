@@ -128,15 +128,7 @@ jobs:
            credentials: ${{ secrets.CREDENTIALS }}
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
            
-      - name: Upload Test to Google Drive
-        uses: Jodebu/upload-to-drive@master
-        with:
-           target: artifacts
-           name: Test-${{ matrix.targetPlatform }}v-${{ steps.build.outputs.buildVersion }}
-           credentials: ${{ secrets.CREDENTIALS }}
-           folder: ${{ secrets.DRIVE_FOLDER_ID }}
 
- 
    
             
   Clean-up:
