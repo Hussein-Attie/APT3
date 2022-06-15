@@ -1,3 +1,12 @@
+## [8.12.1](https://github.com/Hussein-Attie/APT3/compare/v8.12.0...v8.12.1) (2022-06-15)
+
+
+### Bug Fixes
+
+* make dr ([b6a27e1](https://github.com/Hussein-Attie/APT3/commit/b6a27e12a4262a6d78d8185a4215175760de26b7))
+
+
+
 # [8.12.0](https://github.com/Hussein-Attie/APT3/compare/v8.11.0...v8.12.0) (2022-06-15)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * 8.9.0 Cloud Storage ([dbf57b4](https://github.com/Hussein-Attie/APT3/commit/dbf57b407b7b5dfa76b3d70850bf39a769af56da))
-
-
-
-# [8.8.0](https://github.com/Hussein-Attie/APT3/compare/v8.7.0...v8.8.0) (2022-06-15)
-
-
-### Features
-
-* 8.8.0 ([79d88bb](https://github.com/Hussein-Attie/APT3/commit/79d88bb3af1c0cf906ea00b86fa36a14916a3aae))
 
 
 
