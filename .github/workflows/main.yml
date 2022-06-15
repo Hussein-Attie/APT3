@@ -155,6 +155,7 @@ jobs:
         uses: author/action-rollback@stable
         if: ${{ needs.Changelog.outputs.output1 != '' }}
         with:
+            release_id: '' 
             tag: ${{ needs.Changelog.outputs.output1 }}
             delete_orphan_tag: false
         env:
