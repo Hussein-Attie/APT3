@@ -155,9 +155,8 @@ jobs:
         uses: author/action-rollback@stable
         if: ${{ needs.Changelog.outputs.output1 != '' }}
         with:
-           # Using a known release ID
-           #id: ${{ steps.create_release.id }}
             tag: ${{ needs.Changelog.outputs.output1 }}
+            delete_orphan_tag: false
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
