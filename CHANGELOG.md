@@ -1,3 +1,12 @@
+# [8.9.0](https://github.com/Hussein-Attie/APT3/compare/v8.8.0...v8.9.0) (2022-06-15)
+
+
+### Features
+
+* 8.9.0 Cloud Storage ([dbf57b4](https://github.com/Hussein-Attie/APT3/commit/dbf57b407b7b5dfa76b3d70850bf39a769af56da))
+
+
+
 # [8.8.0](https://github.com/Hussein-Attie/APT3/compare/v8.7.0...v8.8.0) (2022-06-15)
 
 
@@ -35,10 +44,6 @@
 ### Features
 
 * new feat 8.1.0 ([87aa1d7](https://github.com/Hussein-Attie/APT3/commit/87aa1d7295ddcbe7b44d0880e9e2f0b470192fab))
-
-
-
-## [8.0.1](https://github.com/Hussein-Attie/APT3/compare/v8.0.0...v8.0.1) (2022-06-14)
 
 
 
