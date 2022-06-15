@@ -1,3 +1,12 @@
+# [8.10.0](https://github.com/Hussein-Attie/APT3/compare/v8.9.0...v8.10.0) (2022-06-15)
+
+
+### Features
+
+* 8.10.0 ([9566848](https://github.com/Hussein-Attie/APT3/commit/9566848a38b697bfbac4dfdaaf70641dd7f4fd53))
+
+
+
 # [8.9.0](https://github.com/Hussein-Attie/APT3/compare/v8.8.0...v8.9.0) (2022-06-15)
 
 
@@ -35,15 +44,6 @@
 
 * new feat ([cc797aa](https://github.com/Hussein-Attie/APT3/commit/cc797aa7cb57a05bb905dca35ed8186d219a0842))
 * rollback uncommented ([0121201](https://github.com/Hussein-Attie/APT3/commit/01212018df3afd3898d16ebae7659a947fcd8098))
-
-
-
-# [8.1.0](https://github.com/Hussein-Attie/APT3/compare/v8.0.1...v8.1.0) (2022-06-14)
-
-
-### Features
-
-* new feat 8.1.0 ([87aa1d7](https://github.com/Hussein-Attie/APT3/commit/87aa1d7295ddcbe7b44d0880e9e2f0b470192fab))
 
 
 
