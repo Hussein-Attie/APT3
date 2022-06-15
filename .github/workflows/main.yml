@@ -44,10 +44,7 @@ jobs:
           release_name: ${{ steps.generate_changelog.outputs.tag }}
           body: ${{ steps.generate_changelog.outputs.clean_changelog }}
           
-      - name: create directory
-        run: |
-          mkdir -p myartifacts
-          
+ 
   Build:
 
     name: Build for ${{ matrix.targetPlatform }}
@@ -100,7 +97,7 @@ jobs:
         if: always()
         with:
           name: Test results
-          path: myartifacts
+          path: artifacts
           
     
     #Build
@@ -120,7 +117,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}-${{ steps.build.outputs.buildVersion }}
-          path: myartifacts
+          path: build
         
   Store:
 
@@ -138,8 +135,16 @@ jobs:
       - name: Upload build to Google Drive
         uses: Jodebu/upload-to-drive@master
         with:
-           target: myartifacts
+           target: build
            name: Build-${{ matrix.targetPlatform }}v-${{ steps.build.outputs.buildVersion }}
+           credentials: ${{ secrets.CREDENTIALS }}
+           folder: ${{ secrets.DRIVE_FOLDER_ID }}
+           
+      - name: Upload Test to Google Drive
+        uses: Jodebu/upload-to-drive@master
+        with:
+           target: artifacts
+           name: Test-${{ matrix.targetPlatform }}v-${{ steps.build.outputs.buildVersion }}
            credentials: ${{ secrets.CREDENTIALS }}
            folder: ${{ secrets.DRIVE_FOLDER_ID }}
 
