@@ -1,8 +1,9 @@
-# [8.4.0](https://github.com/Hussein-Attie/APT3/compare/v8.3.0...v8.4.0) (2022-06-15)
+# [8.5.0](https://github.com/Hussein-Attie/APT3/compare/v8.3.0...v8.5.0) (2022-06-15)
 
 
 ### Features
 
+* 8.5.0 ([1811cad](https://github.com/Hussein-Attie/APT3/commit/1811cad2224d0c1a0cab44cd53410fac29c0f65e))
 * new feat 8.4 ([cec0bdd](https://github.com/Hussein-Attie/APT3/commit/cec0bdd608d126bc466e23bd63b31e142cbd8798))
 
 
