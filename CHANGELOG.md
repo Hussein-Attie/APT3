@@ -1,8 +1,9 @@
-# [8.2.0](https://github.com/Hussein-Attie/APT3/compare/v8.1.0...v8.2.0) (2022-06-14)
+# [8.3.0](https://github.com/Hussein-Attie/APT3/compare/v8.1.0...v8.3.0) (2022-06-15)
 
 
 ### Features
 
+* new feat ([cc797aa](https://github.com/Hussein-Attie/APT3/commit/cc797aa7cb57a05bb905dca35ed8186d219a0842))
 * rollback uncommented ([0121201](https://github.com/Hussein-Attie/APT3/commit/01212018df3afd3898d16ebae7659a947fcd8098))
 
 
