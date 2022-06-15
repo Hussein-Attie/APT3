@@ -1,3 +1,12 @@
+# [8.4.0](https://github.com/Hussein-Attie/APT3/compare/v8.3.0...v8.4.0) (2022-06-15)
+
+
+### Features
+
+* new feat 8.4 ([cec0bdd](https://github.com/Hussein-Attie/APT3/commit/cec0bdd608d126bc466e23bd63b31e142cbd8798))
+
+
+
 # [8.3.0](https://github.com/Hussein-Attie/APT3/compare/v8.1.0...v8.3.0) (2022-06-15)
 
 
@@ -42,15 +51,6 @@
 ### BREAKING CHANGES
 
 * 7.0 RELEASE
-
-
-
-## [5.12.3](https://github.com/Hussein-Attie/APT3/compare/v5.12.2...v5.12.3) (2022-06-14)
-
-
-### Bug Fixes
-
-* Edit main.yml ([c02eb76](https://github.com/Hussein-Attie/APT3/commit/c02eb76e81acece0253a3294f24cec179d337d4e))
 
 
 
