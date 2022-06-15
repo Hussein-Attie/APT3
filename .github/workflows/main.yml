@@ -151,13 +151,11 @@ jobs:
     
         
     #Rollback
+
       - name: Rollback Release
-        uses: author/action-rollback@master
+        uses: ame-yu/action-delete-latest-release@v2
         if: ${{ needs.Changelog.outputs.output1 != '' }}
         with:
-            tag: ${{ needs.Changelog.outputs.output1 }}
-            delete_orphan_tag: false
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
 
