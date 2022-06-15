@@ -1,3 +1,12 @@
+## [8.12.3](https://github.com/Hussein-Attie/APT3/compare/v8.12.2...v8.12.3) (2022-06-15)
+
+
+### Bug Fixes
+
+* remove job store ([b3a952f](https://github.com/Hussein-Attie/APT3/commit/b3a952f18fd4a0bab33478c360e37b0933bed9a2))
+
+
+
 ## [8.12.2](https://github.com/Hussein-Attie/APT3/compare/v8.12.1...v8.12.2) (2022-06-15)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * 8.11.0 ([3c445bf](https://github.com/Hussein-Attie/APT3/commit/3c445bf7b1dfda3eebdb579f714c059b5da41360))
-
-
-
-# [8.10.0](https://github.com/Hussein-Attie/APT3/compare/v8.9.0...v8.10.0) (2022-06-15)
-
-
-### Features
-
-* 8.10.0 ([9566848](https://github.com/Hussein-Attie/APT3/commit/9566848a38b697bfbac4dfdaaf70641dd7f4fd53))
 
 
 
