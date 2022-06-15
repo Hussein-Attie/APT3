@@ -1,3 +1,12 @@
+## [8.12.4](https://github.com/Hussein-Attie/APT3/compare/v8.12.3...v8.12.4) (2022-06-15)
+
+
+### Bug Fixes
+
+* double upload ([e3922d2](https://github.com/Hussein-Attie/APT3/commit/e3922d2d6a4def354741ae326176df75b89fd6c1))
+
+
+
 ## [8.12.3](https://github.com/Hussein-Attie/APT3/compare/v8.12.2...v8.12.3) (2022-06-15)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * 8.12.0 ([279f2df](https://github.com/Hussein-Attie/APT3/commit/279f2df1dcc822c7ac3b46b549e6214120e6cfc3))
-
-
-
-# [8.11.0](https://github.com/Hussein-Attie/APT3/compare/v8.10.0...v8.11.0) (2022-06-15)
-
-
-### Features
-
-* 8.11.0 ([3c445bf](https://github.com/Hussein-Attie/APT3/commit/3c445bf7b1dfda3eebdb579f714c059b5da41360))
 
 
 
