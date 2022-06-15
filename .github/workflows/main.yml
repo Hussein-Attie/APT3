@@ -152,10 +152,9 @@ jobs:
         
     #Rollback
       - name: Rollback Release
-        uses: author/action-rollback@stable
+        uses: author/action-rollback@master
         if: ${{ needs.Changelog.outputs.output1 != '' }}
         with:
-            release_id: '' 
             tag: ${{ needs.Changelog.outputs.output1 }}
             delete_orphan_tag: false
         env:
